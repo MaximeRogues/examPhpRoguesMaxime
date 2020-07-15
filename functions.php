@@ -93,9 +93,14 @@ function validateCompetenceForm() {
         $errors[] = 'Veuillez entrer une note pour cette compétence';
     }
 
-    if($_POST['note'] > 5) {
+    if($_POST['note'] > 5 ) {
         $errors[] = 'Veuillez entrer une note inférieure ou égale à 5';
     }
+
+    if($_POST['note'] < 0 ) {
+        $errors[] = 'Veuillez entrer une note supérieure à 0';
+    }
+
 
     return ['errors'=>$errors];
 }
