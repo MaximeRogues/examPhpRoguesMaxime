@@ -1,0 +1,52 @@
+body {
+    font-family: 'Cinzel', serif;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    
+}
+
+h1, h2, h3, h4, h5, p {
+    font-family: 'Cinzel', serif;
+    font-size: large; 
+}
+
+#contactParcours {
+    display: flex;
+    width: auto;
+}
+
+#sideBar {
+    margin-left: 2rem;
+    width: 20rem;
+}
+
+#header {
+    margin-left: 1rem;
+
+}
+
+#rectangleBleu {
+    width: 20rem;
+    height: 4rem;
+    margin-left: 2rem;
+
+}
+
+.quoteLeft {
+    width: 1rem;
+}
+
+.quoteRight {
+    width: 1rem;
+}
+
+#photo {
+    width: 12rem;
+    height: 15rem;  
+    float: right;
+}
+
+.etoile {
+    width: 3rem;
+    height: 3rem;
+}
