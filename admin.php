@@ -18,6 +18,9 @@ echo('<h3 class="text-center">Salut ' . $_SESSION['user']['nom'] . ' ' . $_SESSI
 <h2 class="text-center">Regarde tout c'qu'on peut faire !</h2>
 <br>
 
+<div class="text-center">
+
+
 <!-- bouton deconnexion qui renvoie vers index.php -->
 <a href="deconnexion.php"> <button class="btn btn-danger" >Déconnexion</button></a>
 
@@ -34,5 +37,6 @@ echo('<h3 class="text-center">Salut ' . $_SESSION['user']['nom'] . ' ' . $_SESSI
 <br>
 <br>
 
+</div>
 
 
