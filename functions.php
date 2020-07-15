@@ -86,11 +86,15 @@ function validateCompetenceForm() {
     $errors = [];
 
     if(empty($_POST['titreComp'])) {
-        $errors[] = 'Veuillez entre un titre pour cette compétence';
+        $errors[] = 'Veuillez entrer un titre pour cette compétence';
     }
 
     if(empty($_POST['note'])) {
-        $errors[] = 'Veuillez entre une note pour cette compétence';
+        $errors[] = 'Veuillez entrer une note pour cette compétence';
+    }
+
+    if($_POST['note'] > 5) {
+        $errors[] = 'Veuillez entrer une note inférieure ou égale à 5';
     }
 
     return ['errors'=>$errors];
@@ -136,15 +140,15 @@ function validateExperienceForm() {
     $errors = [];
 
     if(empty($_POST['titreExp'])) {
-        $errors[] = 'Veuillez entre un titre pour cette experience';
+        $errors[] = 'Veuillez entrer un titre pour cette experience';
     }
 
     if(empty($_POST['description'])) {
-        $errors[] = 'Veuillez entre une description pour cette experience';
+        $errors[] = 'Veuillez entrer une description pour cette experience';
     }
 
     if(empty($_POST['dateDebut'])) {
-        $errors[] = 'Veuillez entre une date de début pour cette experience';
+        $errors[] = 'Veuillez entrer une date de début pour cette experience';
     }
 
     return ['errors'=>$errors];
